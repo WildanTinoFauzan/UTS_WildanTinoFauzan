@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_pervi_menghitung">
+
+    <TextView
+        android:id="@+id/ketik_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ketik Teks"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ketik_title"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill,LabelFor" />
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/editText"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Jumlah Huruf Vokal"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/text_jumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:text="Hitung"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

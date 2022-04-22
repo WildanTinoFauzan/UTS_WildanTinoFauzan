@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+      android:id="@+id/linear1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#e1e1e1"
+      android:orientation="horizontal"
+      tools:ignore="UselessParent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:contentDescription="Camera"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:text="Pertemuan 7 Mengambil Gambar"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_below="@+id/linear1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      tools:ignore="UselessLeaf">
+
+    <ImageView
+        android:id="@+id/camera1"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:contentDescription="open the camera"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="#0ED400"
+        android:textColor="#fff"
+        android:text="Buka Kamera"
+        android:textSize="20sp"
+        android:padding="10dp"
+        tools:ignore="HardcodedText" />
+
+  </LinearLayout>
+</RelativeLayout>
